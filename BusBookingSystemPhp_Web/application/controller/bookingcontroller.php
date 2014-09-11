@@ -34,7 +34,11 @@ class BookingController extends Controller
         $booking2->endDate = mktime(0, 0, 0, 7, 12, 2030);
         $booking2->destination = 'Germany';
         
-        $bookings = array($booking1, $booking2);
+        //$bookings = array($booking1, $booking2);
+        
+        
+        $booking_model = $this->loadModel('BookingModel');
+        $bookings = $booking_model->getAllBookings();
         
         
         require 'application/views/_templates/header.php';

@@ -26,7 +26,7 @@ define('URL', 'http://localhost:8002/');
  */
 define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
-//define('DB_NAME', 'busbookingsystem');
-define('DB_NAME', 'php-mvc');
+define('DB_NAME', 'busbookingsystem');
+//define('DB_NAME', 'php-mvc');
 define('DB_USER', 'root');
 define('DB_PASS', 'Thurston123');
