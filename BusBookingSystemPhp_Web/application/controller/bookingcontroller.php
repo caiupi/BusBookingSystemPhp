@@ -10,7 +10,7 @@ require 'application/entities/booking.php';
  * This is really weird behaviour, but documented here: http://php.net/manual/en/language.oop5.decon.php
  *
  */
-class BookingController extends Controller
+class BookingController extends Controller 
 {
     /**
      * PAGE: index
