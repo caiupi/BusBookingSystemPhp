@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "BusBookingSystemPhp_Web", "BusBookingSystemPhp_Web\BusBookingSystemPhp_Web.phpproj", "{C106F08D-E500-442B-92A2-E69D703B04A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C106F08D-E500-442B-92A2-E69D703B04A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C106F08D-E500-442B-92A2-E69D703B04A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C106F08D-E500-442B-92A2-E69D703B04A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C106F08D-E500-442B-92A2-E69D703B04A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
