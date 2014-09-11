@@ -30,6 +30,7 @@
     <Compile Include="application\entities\booking.php" />
     <Compile Include="application\libs\application.php" />
     <Compile Include="application\libs\controller.php" />
+    <Compile Include="application\models\bookingmodel.php" />
     <Compile Include="application\models\songsmodel.php" />
     <Compile Include="application\models\statsmodel.php" />
     <Compile Include="application\viewmodels\BookingViewModel.php" />
@@ -44,6 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".htaccess" />
+    <Content Include="sql_scripts\01-create-database.sql" />
+    <Content Include="sql_scripts\05-insert-into-table-booking.sql" />
+    <Content Include="sql_scripts\04-create-table-booking.sql" />
+    <Content Include="sql_scripts\02-create-table-bus.sql" />
+    <Content Include="sql_scripts\03-insert-into-table-bus.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="application\" />
@@ -58,6 +64,7 @@
     <Folder Include="application\views\booking\" />
     <Folder Include="application\views\songs\" />
     <Folder Include="application\views\_templates\" />
+    <Folder Include="sql_scripts\" />
     <Folder Include="public\" />
   </ItemGroup>
 </Project>
