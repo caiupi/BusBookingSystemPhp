@@ -1,5 +1,5 @@
 <?php
-class Booking 
+class BookingViewModel 
 {
     var $id;
     var $startDate;

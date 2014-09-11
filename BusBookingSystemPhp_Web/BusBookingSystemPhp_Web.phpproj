@@ -24,7 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="application\config\config.php" />
-    <Compile Include="application\controller\bookingcontroller.php" />
+    <Compile Include="application\controller\BookingController.php" />
     <Compile Include="application\controller\home.php" />
     <Compile Include="application\controller\songs.php" />
     <Compile Include="application\entities\booking.php" />
@@ -32,6 +32,8 @@
     <Compile Include="application\libs\controller.php" />
     <Compile Include="application\models\songsmodel.php" />
     <Compile Include="application\models\statsmodel.php" />
+    <Compile Include="application\viewmodels\BookingViewModel.php" />
+    <Compile Include="application\views\booking\index.php" />
     <Compile Include="application\views\home\example_one.php" />
     <Compile Include="application\views\home\example_two.php" />
     <Compile Include="application\views\home\index.php" />
@@ -50,8 +52,10 @@
     <Folder Include="application\controller\" />
     <Folder Include="application\models\" />
     <Folder Include="application\entities\" />
+    <Folder Include="application\viewmodels\" />
     <Folder Include="application\views\" />
     <Folder Include="application\views\home\" />
+    <Folder Include="application\views\booking\" />
     <Folder Include="application\views\songs\" />
     <Folder Include="application\views\_templates\" />
     <Folder Include="public\" />

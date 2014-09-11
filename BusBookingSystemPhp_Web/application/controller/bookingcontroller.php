@@ -1,6 +1,6 @@
 <?php
 
-require 'application/entities/booking.php';
+require 'application/viewmodels/BookingViewModel.php';
 
 /**
  * Class Home
@@ -19,17 +19,26 @@ class BookingController extends Controller
     public function index()
     {
         // debug message to show where you are, just for the demo
-        echo 'Message from Controller: You are in the controller home, using the method index()';
+        echo 'Message from Controller: You are in the controller booking, using the method index()';
         // load views. within the views we can echo out $songs and $amount_of_songs easily
         
-        $booking1 = new Booking();
-        $booking1->name = 'Bertha';
-        $booking1->description = '1979 Super Viking';
+        date_default_timezone_set('Europe/London');
+        $booking1 = new BookingViewModel();
+        $booking1->id = com_create_guid();
+        $booking1->startDate = mktime(0, 0, 0, 1, 11, 2030);
+        $booking1->endDate = mktime(0, 0, 0, 7, 1, 2030);
+        $booking1->destination = 'Wales';
+        $booking2 = new BookingViewModel();
+        $booking2->id = com_create_guid();
+        $booking2->startDate = mktime(0, 0, 0, 1, 12, 2030);
+        $booking2->endDate = mktime(0, 0, 0, 7, 12, 2030);
+        $booking2->destination = 'Germany';
         
-        echo "<br/>bus name:" . $booking1->name . "<br/>";
+        $bookings = array($booking1, $booking2);
+        
         
         require 'application/views/_templates/header.php';
-        require 'application/views/home/index.php';
+        require 'application/views/booking/index.php';
         require 'application/views/_templates/footer.php';
     }
 
